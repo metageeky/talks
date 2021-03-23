@@ -35,7 +35,7 @@
 			position: relative;
 		}
 		#player {
-			flex: 1 1 auto;
+			flex: 1 0 auto;
 			min-width: 480px;
 		}
 		#player div.able { 
@@ -43,12 +43,13 @@
 			margin: 0;
 		}
 		#transcript {
-			flex: 1 1 30%;
+			flex: 1 0 auto;
 			
 		}
 		#transcript > .able-transcript-area {
 			position: static !important;
 			width: auto;
+			padding-bottom: 0;
 		}
 		.able-transcript div {
 			margin: 10px 0 0;
@@ -56,12 +57,18 @@
 		.able-transcript {
 			padding: 0 10px;
 			line-height: 1.5;
-			height: 400px;
 		}
 		h1 {
 			margin: 0;
 			font-size: 2.25rem;
 		}
+		h2 {
+			margin: 1rem 0 0.1875rem;
+			font-size: 1.75rem;
+		}
+		p, ul { margin: 0; }
+		li + li { margin-top: 0.25rem; }
+		
 		header {
 			margin-bottom: 15px;
 		}
