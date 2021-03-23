@@ -79,7 +79,16 @@
 			margin: 0;
 			font-size: 1.5rem;
 		}
-	
+		.offscreen {
+			position: absolute;
+			clip: rect(1px 1px 1px 1px);
+			clip: rect(1px, 1px, 1px, 1px);
+			padding: 0;
+			border: 0;
+			height: 1px;
+			width: 1px;
+			overflow: hidden;
+		}
 	</style>
 </head>
 <body>
@@ -93,9 +102,10 @@
 <main>
 	<div class="wrapper">
 		<div id="player">
-			  <video id="video1" data-able-player data-heading-level="2" data-skin="2020" preload="auto" data-youtube-id="fSUYL-y4Xeg" data-transcript-div="transcript" data-transcript-title="Transcript">
+			  <video id="video1" data-able-player data-heading-level="2" data-skin="2020" preload="auto" data-youtube-id="fSUYL-y4Xeg" data-transcript-div="transcript" data-transcript-title="">
 			  </video>
 		</div>
+		<h2 class="offscreen">Interactive Transcript</h2>
 		<div id="transcript"></div>
 	</div>
 	<div id="abstract">
