@@ -46,11 +46,20 @@
 			flex: 0 0 auto;
 			width: 450px;
 			margin-left: 15px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
 		}
 		#transcript > .able-transcript-area {
-			position: static !important;
+			position: absolute !important;
 			height: auto;
 			padding-bottom: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;	
+			display: flex;
+			flex-direction: column;
 		}
 		.able-transcript div {
 			margin: 10px 0 0;
@@ -58,6 +67,8 @@
 		.able-transcript {
 			padding: 0 10px;
 			line-height: 1.5;
+			height: auto;
+			flex: 1 1 auto;
 		}
 		h1 {
 			margin: 0;
