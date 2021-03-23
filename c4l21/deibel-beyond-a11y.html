@@ -20,27 +20,36 @@
 		body {
 			padding-left: 15px;
 			padding-right: 15px;
-			max-width: 1200px;
+			min-width: 840px;
+			max-width: 1600px;
 			margin: 15px auto;
 			font-family: "Frankling Gothic", sans-serif;
 			line-height: 1.5;
 			color: #101010;
 		}
 		.wrapper { 
+			display: flex;
 		}
 		#player {
 			min-width: 480px;
+			width: auto;
+			flex: 1 1 auto;
+		}
+		#player > .able-wrapper {
+			max-width: 100% !important;
 		}
 		#player div.able { 
 			box-shadow: none;
 			margin: 0;
 		}
 		#transcript {
-			
+			width: 320px;
+			margin-left: 10px;
+			flex: 1 0 auto;
 		}
 		#transcript > .able-transcript-area {
 			position: static !important;
-			width: auto;
+			width: auto !important;
 			padding-bottom: 0;
 		}
 		.able-transcript div {
