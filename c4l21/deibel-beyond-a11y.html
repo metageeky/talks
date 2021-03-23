@@ -32,9 +32,11 @@
 			flex-wrap: nowrap;
 			justify-content: stretch;
 			align-items: flex-start;
+			position: relative;
 		}
 		#player {
 			flex: 1 0 auto;
+			max-width: 50%;
 		}
 		#player div.able { 
 			box-shadow: none;
@@ -42,11 +44,21 @@
 		}
 		#transcript {
 			flex: 0 0 auto;
-
+			width: 420px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
 		}
 		#transcript > .able-transcript-area {
-			position: static !important;
-
+			position: absolute !important;
+			height: auto;
+			padding-bottom: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;	
+			display: flex;
+			flex-direction: column;
 		}
 		.able-transcript div {
 			margin: 10px 0 0;
