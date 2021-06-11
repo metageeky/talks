@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Just Say NO to Accessibility Overlays | ALA Top Tech Trends 2021</title>
+
+	<link rel="stylesheet" href="../css/normalize.css" type="text/css"/>
+
+	<!-- Dependencies -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="../js/js.cookie.js"></script>
+
+	<!-- Able Player CSS -->
+	<link rel="stylesheet" href="../css/ableplayer.min.css" type="text/css"/>
+
+	<!-- Able Player JavaScript -->
+	<script src="../js/ableplayer.js"></script>
+	
+	<style>
+		body {
+			padding-left: 15px;
+			padding-right: 15px;
+			min-width: 840px;
+			max-width: 1600px;
+			margin: 15px auto;
+			font-family: "Frankling Gothic", sans-serif;
+			line-height: 1.5;
+			color: #101010;
+		}
+		.wrapper { 
+			display: flex;
+		}
+		#player {
+			min-width: 480px;
+			width: auto;
+			flex: 1 1 auto;
+		}
+		#player > .able-wrapper {
+			max-width: 100% !important;
+		}
+		#player div.able { 
+			box-shadow: none;
+			margin: 0;
+		}
+		#transcript {
+			width: 320px;
+			max-width: 320px;
+			margin-left: 10px;
+			flex: 0 0 auto;
+			font-size: 1.1rem;
+		}
+		#transcript > .able-transcript-area {
+			position: static !important;
+			width: auto !important;
+			padding-bottom: 0;
+		}
+		.able-transcript div {
+			margin: 10px 0 0;
+		}
+		.able-transcript {
+			padding: 0 10px;
+			line-height: 1.5;
+		}
+		h1 {
+			margin: 0;
+			font-size: 2.25rem;
+		}
+		h2 {
+			margin: 1rem 0 0.1875rem;
+			font-size: 1.75rem;
+		}
+		p, ul { margin: 0; }
+		li + li { margin-top: 0.25rem; }
+		
+		header {
+			margin-bottom: 15px;
+		}
+		header > p {
+			margin: 0;
+			font-size: 1.5rem;
+		}
+		.offscreen {
+			position: absolute;
+			clip: rect(1px 1px 1px 1px);
+			clip: rect(1px, 1px, 1px, 1px);
+			padding: 0;
+			border: 0;
+			height: 1px;
+			width: 1px;
+			overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+
+<header>
+	<h1>A Top Tech Trend to Avoid:<br/>Just Say NO to Accessibility Overlays</h1>
+	<p>Dr. Kate Deibel</p>
+</header>
+<main>
+	<div class="wrapper">
+		<div id="player">
+			  <video id="video1" data-able-player data-heading-level="2" data-skin="2020" preload="auto" data-youtube-id="l9HejphhBC8" data-transcript-div="transcript" data-transcript-title="">
+			  </video>
+		</div>
+		<h2 class="offscreen">Interactive Transcript</h2>
+		<div id="transcript"></div>
+	</div>
+	<div id="abstract">
+		<h2>Talk Abstract</h2>
+		<p>	Talk for ALA 2021's Top Tech Trends session on the many evils of accessibility overlays like AccessiBe. Just say no to overlays.
+		</p>
+	</div>
+	<div id="materials">
+		<h2>Talk Materials</h2>
+		<ul>
+			<li><a href="deibel-overlays-bad.pptx">Presentation Slides (PPTX)</a></li>
+		</ul>
+	</div>
+	<div id="author">
+		<h2>About the Presenter</h2>
+		<p>	Dr. Katherine "Kate" Deibel is the Inclusion & Accessibility 
+			Librarian at Syracuse University Libraries in New York. She has 
+			a PhD in Computer Science from the University of Washington but 
+			would much rather talk about web comics, chili peppers, her cat, 
+			technology adoption, and changing the world.
+		</p>
+	</div>
+
+
+</main>
+
+
+
+
+
+</body>
+</html>
