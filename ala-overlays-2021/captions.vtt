@@ -1,0 +1,512 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.040 --> 00:00:06.960
+Hello, I'm Dr. Kate Deibel of Syracuse University&nbsp;
+Libraries and I'm here today to talk about&nbsp;&nbsp;
+
+00:00:06.960 --> 00:00:12.160
+a top technology trend to avoid: 
+just&nbsp;say no to accessibility overlays.&nbsp;&nbsp;
+
+00:00:12.720 --> 00:00:18.960
+Before I get into any more details, let me just&nbsp;
+first mention that the these slides as well as&nbsp;&nbsp;
+
+00:00:18.960 --> 00:00:26.240
+a captioned recording of this talk are available&nbsp;
+at the following URLs and so everything will be&nbsp;&nbsp;
+
+00:00:26.240 --> 00:00:32.160
+provided at these URLs will also be shared by&nbsp;
+the coordinator for the top tech trends.
+
+00:00:34.080 --> 00:00:38.334
+So I want to explain who I am to give a little&nbsp;
+bit of a background as to why I'm talking about&nbsp;this.
+
+00:00:38.334 --> 00:00:44.080
+As the inclusion and accessibility librarian&nbsp;
+at Syracuse University Libraries, I oversee&nbsp;&nbsp;
+
+00:00:44.080 --> 00:00:51.360
+our various disability access efforts and services.&nbsp;
+That means I oversee various aspects about&nbsp;&nbsp;
+
+00:00:51.360 --> 00:00:57.440
+providing assistive technologies as well as&nbsp;
+services such as providing alternative formats.&nbsp;
+
+00:00:57.440 --> 00:01:02.640
+In general, though, I'm also just active in the&nbsp;
+working to support the libraries' efforts with&nbsp;&nbsp;
+
+00:01:02.640 --> 00:01:09.680
+diversity, equity, inclusion, and accessibility.&nbsp;
+Overall, I have been an active advocate and speaker&nbsp;&nbsp;
+
+00:01:09.680 --> 00:01:16.000
+for disability access in libraries and just&nbsp;
+generally in higher education for several years.&nbsp;&nbsp;
+
+00:01:16.000 --> 00:01:22.640
+I've included just some links about two talks I&nbsp;
+have given in recent times about accessibility&nbsp;.
+
+00:01:23.680 --> 00:01:28.320
+And here's the thing: it's not surprising&nbsp;
+that I'm talking about disability access.&nbsp;&nbsp;
+
+00:01:28.960 --> 00:01:35.760
+Disability access is a great thing and really it&nbsp;
+should always be a top technology trend because&nbsp;&nbsp;
+
+00:01:35.760 --> 00:01:42.400
+we need to always consider disability access as&nbsp;
+well as other accessibility and equity issues 
+
+00:01:42.400 --> 00:01:45.034
+when we're thinking about technologies.
+
+00:01:45.034 --> 00:01:50.134
+But here's&nbsp;the thing:
+in this past year, particularly with the&nbsp;pandemic,
+
+00:01:50.134 --> 00:01:56.034
+we've had to push to make things more&nbsp;and more 
+accessible as we went to make things&nbsp;virtual.
+
+00:01:56.034 --> 00:02:00.320
+We realized that there's a lot we&nbsp;
+could do to include more people and as we&nbsp;&nbsp;
+
+00:02:00.320 --> 00:02:06.800
+go back to in-person work, we need to remember&nbsp;
+not to regress and lead to poorer accessibility.&nbsp;
+
+00:02:07.600 --> 00:02:12.080
+And unfortunately, there have always, &nbsp;
+you know, whenever there's a crisis,&nbsp;&nbsp;
+
+00:02:12.640 --> 00:02:16.880
+people look for easy answers. 
+And unfortunately, there are times people are out there&nbsp;&nbsp;
+
+00:02:17.680 --> 00:02:25.600
+ready to supply easy but not necessarily true&nbsp;answers.
+And in this case in this past year, we have&nbsp;&nbsp;
+
+00:02:25.600 --> 00:02:31.000
+also seen the rise of the sham and frauds 
+that are&nbsp;accessibility overlays 
+
+00:02:31.000 --> 00:02:33.634
+So what is an accessibility&nbsp;overlay?
+
+00:02:33.634 --> 00:02:39.440
+Technically, it's a bit ofJavaScript code.&nbsp;
+So, that's code that you put on a website that when&nbsp;&nbsp;
+
+00:02:39.440 --> 00:02:42.500
+you add to it you get all these amazing claims. 
+
+00:02:42.500 --> 00:02:48.867
+One: all the accessibility issues on the site are fixed&nbsp;automatically!
+
+00:02:50.034 --> 00:02:54.880
+Then, you know and more importantly,&nbsp;
+the website is now fully compliant with the web&nbsp;&nbsp;
+
+00:02:54.880 --> 00:03:01.520
+accessibility guidelines (WCAG). These are the&nbsp;
+guidelines that are the basis behind Section 508,&nbsp;&nbsp;
+
+00:03:01.520 --> 00:03:07.600
+the Americans with Disabilities Act, and other&nbsp;
+similar disability accommodation and access laws.&nbsp;&nbsp;
+
+00:03:08.880 --> 00:03:16.000
+And moreover, by having the overlay on your site,&nbsp;
+you are now protected from disability lawsuits!&nbsp;&nbsp;
+
+00:03:16.000 --> 00:03:21.920
+If somebody tries to sue you for being inaccessible,&nbsp;
+you can say I have an overlay therefore&nbsp;&nbsp;
+
+00:03:21.920 --> 00:03:26.800
+nothing will be wrong! Doesn't this sound&nbsp;
+amazing? you know it sounds like something&nbsp;&nbsp;
+
+00:03:26.800 --> 00:03:31.840
+that should be in an infomercial.
+I mean I&nbsp;can kind of imagine exactly how it would go:&nbsp;&nbsp;
+
+00:03:32.034 --> 00:03:34.500
+It'd probably go like this: 
+
+00:03:34.500 --> 00:03:38.234
+[sarcastic commercial voice]
+Want to stop&nbsp;worrying about those pesky disabled users?&nbsp;
+
+00:03:38.240 --> 00:03:45.200
+Tired of accessibility complaints and lawsuits?&nbsp;
+Want those horrible horrid accessibility experts&nbsp;&nbsp;
+
+00:03:45.200 --> 00:03:50.640
+like that Kate to just shut up? 
+Well all&nbsp;you need to do is just add this small line&nbsp;&nbsp;
+
+00:03:50.640 --> 00:03:56.800
+of JavaScript and a large amount of cash to us&nbsp;
+and your accessibility problems can be solved!&nbsp;&nbsp;
+
+00:03:56.800 --> 00:04:03.440
+Just just pay AccessiBe or EqualWeb or&nbsp;
+AudioEye or any other accessibility overlay!&nbsp;&nbsp;
+
+00:04:04.960 --> 00:04:10.400
+And there are plenty of great institutions who&nbsp;
+are joining this as well Marymount University, 
+
+00:04:10.400 --> 00:04:15.867
+the&nbsp;&nbsp;FCCs consumer complaint center, 
+the United States&nbsp;social security administration, 
+
+00:04:15.867 --> 00:04:20.434
+and if you're in&nbsp;the state of Louisiana,
+ the department of health&nbsp;uses an overlay. 
+
+00:04:20.467 --> 00:04:24.100
+Now, I will say that if you go to&nbsp;any of these sites
+and you can't find an overlay,&nbsp;
+
+00:04:24.100 --> 00:04:31.400
+that might be the case that you are running an&nbsp;ad blocker or privacy tool that prevents these&nbsp;overlays from working.
+
+00:04:31.400 --> 00:04:38.034
+So that's already a great&nbsp;thing you have a choice between 
+disability&nbsp;access or protecting user privacy. &nbsp;
+
+00:04:38.400 --> 00:04:43.100
+Ah, it's so great when we get to have to, you know, have competing demands there. 
+
+00:04:44.200 --> 00:04:48.400
+And here's the thing,&nbsp;you're guaranteed that you won't be sued.
+
+00:04:48.400 --> 00:04:53.900
+It's not&nbsp;like there's anyone who's actually made or pointed out 
+there&nbsp; saying that you might get sued or something like that.
+
+00:04:53.900 --> 00:05:02.767
+Oh wait! Adrian Roselli, a leading&nbsp;advocate and spokesperson for web accessibility, &nbsp;published last year in June 2020 
+
+00:05:02.767 --> 00:05:10.160
+a blog post&nbsp;entitled "#accessiBe (one of the most common&nbsp;
+overlay companies) will get you sued" 
+
+00:05:10.160 --> 00:05:15.360
+And in this&nbsp;article he points out all the problems of overlays&nbsp;
+why they do not protect you and he has updated it.&nbsp;&nbsp;
+
+00:05:17.040 --> 00:05:22.640
+So how do you identify if a website has and is running an overlay? 
+Well one is to be aware of the&nbsp;&nbsp;
+
+00:05:22.640 --> 00:05:29.040
+more popular companies out there. AccessiBe is&nbsp;
+probably the most popular one right now but other&nbsp;&nbsp;
+
+00:05:29.040 --> 00:05:35.440
+overlays are AudioEye,  EqualWeb, User1st, and MaxAccess.
+Then generally, what you're looking for&nbsp;&nbsp;
+
+00:05:36.000 --> 00:05:41.520
+is a button that's added to the site that&nbsp;
+pretty much if you click on it you&nbsp;&nbsp;
+
+00:05:41.520 --> 00:05:46.400
+get all this disability access information.
+And the buttons usually take common forms.
+
+00:05:46.400 --> 00:05:50.880
+The most common one is actually&nbsp;
+this white stick figure in a circle&nbsp;&nbsp;
+
+00:05:50.880 --> 00:05:57.067
+That is the recognized universal icon&nbsp;
+for accessibility. 
+
+00:05:57.100 --> 00:06:04.000
+You might also see a stylized&nbsp;&nbsp;person in a wheelchair icon just&nbsp;like the disabled parking signs.&nbsp;&nbsp;
+
+00:06:04.000 --> 00:06:07.920
+And sometimes, you might see something&nbsp;different. The middle icon here ,which are those&nbsp;&nbsp;
+
+00:06:07.920 --> 00:06:14.634
+four interlaced circles, is what AudioEyes's&nbsp;company icon is.
+
+00:06:14.667 --> 00:06:22.200
+And so just an example, you might see something even more explicit such as on the&nbsp;Louisiana department of health. 
+
+00:06:22.200 --> 00:06:29.034
+There's this little tab on the right side of the page that says&nbsp;"accessibility" that when you click on it,
+
+00:06:29.034 --> 00:06:32.786
+it opens&nbsp;up to all these accessibility adjustments.
+
+00:06:32.786 --> 00:06:40.167
+So&nbsp;what do overlays actually do? What do they offer? 
+As I said, well they try to fix the&nbsp;disability access issues. 
+
+00:06:40.167 --> 00:06:47.920
+And the way they do this&nbsp;is one they'll offer to turn on 
+one or more&nbsp;profiles based upon either a disability such&nbsp;&nbsp;
+
+00:06:47.920 --> 00:06:53.933
+as "I have ADHD so turn on everything you think&nbsp;will help me" or "I have low vision" 
+
+00:06:54.200 --> 00:07:00.320
+Or it might&nbsp;be actually some expected interaction: 
+I'm&nbsp;going to be using the keyboard or a switch device.&nbsp;&nbsp;
+
+00:07:00.960 --> 00:07:06.100
+There's also usually tools on there for adjusting&nbsp;things 
+like make the font size bigger, 
+
+00:07:06.100 --> 00:07:11.600
+change&nbsp;the font, adjust the colors. 
+So there's all these&nbsp;little things to tweak the page 
+
+00:07:12.560 --> 00:07:17.520
+to make yourself, you know, better for the user&nbsp;apparently.
+And also there might actually&nbsp;&nbsp;
+
+00:07:17.520 --> 00:07:23.120
+be a lot of changes going on underneath the&nbsp;
+hood with the code. Primarily just in the HTML.&nbsp;
+
+00:07:24.480 --> 00:07:29.440
+But why don't overlays actually work?&nbsp;
+Well, there are several reasons for this.&nbsp;&nbsp;
+
+00:07:29.440 --> 00:07:37.280
+One, automated accessibility testing for you&nbsp;
+know, tends to only be able to find about 25&nbsp;percent
+
+00:07:37.280 --> 00:07:42.640
+of all known accessibility issues. So, of everything&nbsp;that's cited in the web content accessibility&nbsp;&nbsp;
+
+00:07:42.640 --> 00:07:48.720
+guidelines, you can only use software to detect&nbsp;
+those a quarter of the time! You need a human to&nbsp;&nbsp;
+
+00:07:48.720 --> 00:07:56.800
+actually do the testing! So this makes you wonder:&nbsp;
+If an overlay is software how can it catch and fix&nbsp;&nbsp;
+
+00:07:56.800 --> 00:08:03.360
+100% of issues? That's pretty amazing there! 
+And a bit of a mathematical impossibility!&nbsp;&nbsp;
+
+00:08:04.560 --> 00:08:10.000
+Web frameworks such as Vue, React, and other things&nbsp;that are used on a lot of web pages change the&nbsp;&nbsp;
+
+00:08:10.000 --> 00:08:17.120
+page beyond what the overlay can actually reach&nbsp;or affect.
+This software (Vue, React, and&nbsp;&nbsp;
+
+00:08:17.120 --> 00:08:24.240
+a few others) do things that intentionally for&nbsp;security reasons.
+The way that these overlays&nbsp;&nbsp;
+
+00:08:24.240 --> 00:08:28.400
+work with JavaScript, they can't change anything&nbsp;
+so they won't actually work on those sites.&nbsp;&nbsp;
+
+00:08:29.600 --> 00:08:35.120
+Moreover, browsers already actually provide tools&nbsp;
+for customizing things like fonts, text colors,&nbsp;&nbsp;
+
+00:08:35.680 --> 00:08:42.640
+zoom, any of that. And here's those things the&nbsp;
+overlays will not fix: things that you're linked&nbsp;&nbsp;
+
+00:08:42.640 --> 00:08:47.840
+to like PDFs, Word documents, PowerPoints and you&nbsp;
+can actually forget about it actually say&nbsp;
+
+00:08:47.840 --> 00:08:53.840
+adding captions to videos. There's still plenty&nbsp;
+of things on the web, lots of content on the web,&nbsp;&nbsp;
+
+00:08:53.840 --> 00:09:00.240
+that are not affected by overlays.
+There's even&nbsp;other reasons why overlays don't work. First of&nbsp;&nbsp;
+
+00:09:00.240 --> 00:09:06.480
+all is one of the classic examples in that images&nbsp;
+need good accessible descriptions. They need good&nbsp;&nbsp;
+
+00:09:06.480 --> 00:09:14.160
+alternative text, and AI technique can only do&nbsp;so much in terms of accuracy. I mean it can; &nbsp;
+
+00:09:14.160 --> 00:09:19.200
+we've got a lot better to be able to read text&nbsp;in images, so that's good. But to  be able to identify&nbsp;&nbsp;
+
+00:09:19.200 --> 00:09:25.280
+individual objects, it's not always going to be&nbsp;accurate.
+And most importantly, image descriptions&nbsp;&nbsp;
+
+00:09:25.280 --> 00:09:30.400
+are not just a description of the image! They&nbsp;need to be relevant to the context. You might&nbsp;&nbsp;
+
+00:09:30.400 --> 00:09:36.640
+be having an image of say a scatter plot or&nbsp;
+bar chart and the purpose of it might actually&nbsp;&nbsp;
+
+00:09:36.640 --> 00:09:42.240
+be as to present that data but it might just be&nbsp;this is an example of a scatter plot.&nbsp;&nbsp;
+
+00:09:44.160 --> 00:09:50.320
+Or you know you could have an image, you know, an image that is a painting by Van Gogh and&nbsp;&nbsp;
+
+00:09:50.320 --> 00:09:54.960
+you might actually be wanting to just be an&nbsp;example of work by Van Gogh or you might be&nbsp;&nbsp;
+
+00:09:54.960 --> 00:10:01.600
+highlighting some artistic aspect of that work&nbsp;
+such as his use of color or texture. There's a&nbsp;&nbsp;
+
+00:10:01.600 --> 00:10:07.600
+lot in there that when you write alt text , it's&nbsp;not as some---you need to think about the context.&nbsp;&nbsp;
+
+00:10:08.640 --> 00:10:14.000
+And here's the other thing too.
+Overlays are&nbsp;basically an excuse to not do not do the hard work.&nbsp;&nbsp;
+
+00:10:14.000 --> 00:10:20.240
+It basically says that "Hey, you know all&nbsp;
+these accessibility fixes? We don't need to do it!"&nbsp;&nbsp;
+
+00:10:20.240 --> 00:10:26.240
+"We can just, you know, let our code be&nbsp;
+as horrible as it needs to be. We can't follow&nbsp;&nbsp;
+
+00:10:26.240 --> 00:10:32.080
+these guidelines or advice out there or best&nbsp;practices. We will continue to create crappy sites."&nbsp;&nbsp;
+
+00:10:32.640 --> 00:10:37.533
+"And everything will be fixed."
+But they aren't! And&nbsp;here's the big thing: 
+
+00:10:37.533 --> 00:10:44.000
+A lot of screen readers and&nbsp;other assistive technologies get blocked by these&nbsp;overlays. It's actually---can be more difficult to&nbsp;&nbsp;
+
+00:10:44.000 --> 00:10:51.440
+use a screen reader on a website with an&nbsp;overlay versus the same site without the overlay.&nbsp;&nbsp;
+
+00:10:53.200 --> 00:10:56.240
+And of course, there are plenty of&nbsp;
+complaints out there by disabled users.&nbsp;&nbsp;
+
+00:10:57.200 --> 00:11:05.680
+One twitter post from GeauxEnder. He says "that&nbsp;with 100% certainty, any site which has deployed&nbsp;&nbsp;
+
+00:11:05.680 --> 00:11:11.120
+an overlay in the past year and a half has been&nbsp;
+less usable for both my wife and me--both blind."&nbsp;&nbsp;
+
+00:11:12.320 --> 00:11:18.400
+CatchTheseWords talks about on how the&nbsp;website adds all this superfluous&nbsp;&nbsp;
+
+00:11:18.400 --> 00:11:26.000
+information on the site. It makes it extremely&nbsp;difficult and slow to use the page. In fact, it&nbsp;&nbsp;
+
+00:11:26.000 --> 00:11:31.440
+actually tends to screw up things like tables.&nbsp;
+And VICE magazine published an entire article&nbsp;&nbsp;
+
+00:11:31.440 --> 00:11:36.400
+about people with disabilities saying&nbsp;
+AccessiBe is making the web worse for them.&nbsp;&nbsp;
+
+00:11:37.840 --> 00:11:44.320
+And of course then, accessibility experts also&nbsp;
+say no to overlays in a survey of web 
+
+00:11:44.320 --> 00:11:52.640
+accessibility practitioners in January 2021,&nbsp;
+WebAim found that 60 i mean 67 percent of web&nbsp;&nbsp;
+
+00:11:52.640 --> 00:11:59.520
+accessibility practitioners find web accessibility&nbsp;
+overlays not very or not at all effective. 
+
+00:11:59.520 --> 00:12:05.600
+Only three percent of them found them very effective.&nbsp;
+And if you and if you restricted that to those&nbsp;&nbsp;
+
+00:12:05.600 --> 00:12:11.120
+practitioners who identified as having a&nbsp;
+disability, it went up to 72 percent of them&nbsp;&nbsp;
+
+00:12:11.120 --> 00:12:16.800
+find found that overlays were not effective and&nbsp;
+only 2 percent found them to be very effective.&nbsp;&nbsp;
+
+00:12:17.360 --> 00:12:22.480
+So what we have here just showing that there's a&nbsp;
+lot of that recognizing that they're not doing the job.&nbsp;&nbsp;
+
+00:12:23.200 --> 00:12:28.640
+And experts have plenty more to say@ The article&nbsp;
+that I mentioned earlier by Adrian Roselli&nbsp;&nbsp;
+
+00:12:29.200 --> 00:12:35.040
+"AccessiBe will get you sued
+ is one that&nbsp;
+everyone should read but there are other great&nbsp;&nbsp;
+
+00:12:35.040 --> 00:12:39.360
+articles out there. I chose a few of these&nbsp;
+and in particularly the Overlay Fact Sheet&nbsp;&nbsp;
+
+00:12:40.320 --> 00:12:45.520
+was created by Karl Grobes and does a complete&nbsp;
+rundown of all the problems with overlays&nbsp;&nbsp;
+
+00:12:45.520 --> 00:12:51.840
+and has so far as of June 1st has been signed by&nbsp;
+441 accessibility advocates, myself included.&nbsp;&nbsp;
+
+00:12:52.880 --> 00:12:59.040
+So here's what it is: Accessibility overlays will&nbsp;
+not magically fix all your accessibility problems&nbsp;&nbsp;
+
+00:12:59.600 --> 00:13:03.200
+You can and will receive complaints&nbsp;
+or lawsuits even with them&nbsp;&nbsp;
+
+00:13:04.640 --> 00:13:10.960
+Invest your money instead on making your site&nbsp;
+accessible now. The web content accessibility&nbsp;&nbsp;
+
+00:13:10.960 --> 00:13:20.000
+guidelines are over 20 years old. There really&nbsp;
+is no excuse and please please just say no&nbsp;&nbsp;
+
+00:13:20.000 --> 00:13:27.360
+to accessibility overlays or Fiona, this scary-looking tuxedo cat with her face cast in. shadows&nbsp;&nbsp;
+
+00:13:27.360 --> 00:13:32.240
+will find you. Yeah, Fiona is my cat and&nbsp;
+she appears in all my accessibility&nbsp;talks.&nbsp;
+
+00:13:33.840 --> 00:13:39.440
+Thank you. Here's some contact information&nbsp;for me. Please go ahead and reach out if&nbsp;&nbsp;
+
+00:13:39.440 --> 00:13:45.440
+you have accessibility questions in libraries. I&nbsp;
+love talking about this so thank you very much.
+
