@@ -6,15 +6,15 @@
 
 	<link rel="stylesheet" href="../css/normalize.css" type="text/css"/>
 
-	<!-- Dependencies -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-	<script src="../js/js.cookie.js"></script>
+<!-- Dependencies -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
 
 	<!-- Able Player CSS -->
-	<link rel="stylesheet" href="../css/ableplayer.min.css" type="text/css"/>
+	<link rel="stylesheet" href="../ableplayer/build/ableplayer.min.css" type="text/css"/>
 
 	<!-- Able Player JavaScript -->
-	<script src="../js/ableplayer.js"></script>
+	<script src="../ableplayer/build/ableplayer.min.js"></script>
 	
 	<style>
 		body {
@@ -102,7 +102,8 @@
 <main>
 	<div class="wrapper">
 		<div id="player">
-			  <video id="video1" data-able-player data-heading-level="2" data-skin="2020" preload="auto" data-youtube-id="fSUYL-y4Xeg" data-transcript-div="transcript" data-transcript-title="">
+			  <video id="video1" data-able-player data-heading-level="2" data-skin="2020" preload="auto" data-youtube-id="fSUYL-y4Xeg" data-transcript-div="transcript" data-transcript-title="" playsinline="">
+				<track kind="captions" src="captions.vtt" srclang="en" label="English"/>			  
 			  </video>
 		</div>
 		<h2 class="offscreen">Interactive Transcript</h2>

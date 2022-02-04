@@ -1,0 +1,793 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.440 --> 00:00:07.280
+Hello everyone I'm Dr. Kate Deibel, otherwise&nbsp;
+known as @metageeky on Twitter and Slack.
+
+00:00:08.000 --> 00:00:12.720
+There will be some messages about this talk&nbsp;
+and some additional information going out&nbsp;&nbsp;
+
+00:00:12.720 --> 00:00:16.320
+on the various conference channels&nbsp;
+as I begin. So today,&nbsp;I'm talking&nbsp;
+
+00:00:16.320 --> 00:00:19.360
+about "Thinking Beyond the&nbsp;
+Basics of&nbsp;Accessibility"
+
+00:00:19.360 --> 00:00:21.760
+but before that I want to&nbsp;
+give&nbsp;a land acknowledgement&nbsp;
+
+00:00:21.760 --> 00:00:28.000
+to the Onondaga nation, fire&nbsp;
+keepers of the Huadenosaunee,&nbsp;&nbsp;
+
+00:00:28.000 --> 00:00:32.160
+the indigenous people on whose&nbsp;
+ancestral lands Syracuse&nbsp;University
+
+00:00:32.160 --> 00:00:38.240
+and its people now stand, sit, walk, and roll.
+We respect all abilities here.&nbsp;&nbsp;
+
+00:00:39.200 --> 00:00:45.200
+So this is my seventh Code4Lib. I started in 2015
+and that makes me an old timer&nbsp;
+
+00:00:45.200 --> 00:00:49.360
+And as an old timer, I've talked quite a&nbsp;bit
+about accessibility issues over the years&nbsp;&nbsp;
+
+00:00:50.000 --> 00:00:53.920
+I gave a lightning talk my&nbsp;
+first year as a newcomer&nbsp;&nbsp;
+
+00:00:53.920 --> 00:00:57.360
+on keyboard accessibility so you newcomers&nbsp;
+should definitely do a lightning&nbsp;talk!
+
+00:00:58.960 --> 00:01:02.800
+I have also given talks about&nbsp;
+accessible&nbsp;search result catalogs
+
+00:01:03.760 --> 00:01:07.360
+Accessibility reviews&nbsp;of websites&nbsp;
+that many librarians like to use
+
+00:01:08.080 --> 00:01:12.720
+and talked last year about text&nbsp;
+formats and what their various&nbsp;&nbsp;
+
+00:01:12.720 --> 00:01:17.760
+accessibility strengths and weaknesses are.
+In general, when I've been choosing these topics&nbsp;&nbsp;
+
+00:01:17.760 --> 00:01:22.800
+these have been topics that both interested&nbsp;
+me but were also important nuggets I&nbsp;felt&nbsp;
+
+00:01:22.800 --> 00:01:27.040
+every library technology person&nbsp;
+could benefit&nbsp;from hearing.
+
+00:01:27.840 --> 00:01:30.880
+Now this year, though, I'm going to&nbsp;admit
+that I'm being pretty selfish
+
+00:01:30.880 --> 00:01:36.480
+I'm focusing&nbsp;only on an accessibility topic that&nbsp;
+interests me, and it's been a long running one.
+
+00:01:36.480 --> 00:01:40.960
+One that I've&nbsp;actually been interested in since&nbsp;
+my days as a doctoral student looking for a&nbsp;&nbsp;
+
+00:01:40.960 --> 00:01:46.640
+thesis topic. Of course, I didn't get to work on&nbsp;
+it because nobody back in 2005 envisioned that&nbsp;&nbsp;
+
+00:01:46.640 --> 00:01:52.560
+we would have this massive ecosystem of mobile&nbsp;
+portable technologies and we'd be reading on them.
+
+00:01:52.560 --> 00:01:55.360
+Yeah, nah you could have&nbsp;listened to me but nope!
+
+00:01:56.080 --> 00:01:59.840
+But just to go on like this, the reason why
+I'm focusing to something that I'm interested&nbsp;&nbsp;
+
+00:01:59.840 --> 00:02:04.080
+in is I'm trying to address some critical&nbsp;
+burnout that's happening to me right now.&nbsp;&nbsp;
+
+00:02:04.800 --> 00:02:09.360
+And what's going on is so that I'm getting pretty&nbsp;
+burnt out on accessibility advocacy. And I'm not&nbsp;&nbsp;
+
+00:02:09.360 --> 00:02:15.680
+alone in this. This past year has been great&nbsp;
+in terms of more and more people realizing&nbsp;&nbsp;
+
+00:02:15.680 --> 00:02:19.920
+the importance of accessibility,&nbsp;
+particularly due to the increased&nbsp;&nbsp;
+
+00:02:19.920 --> 00:02:24.000
+virtual interactions we've been going&nbsp;
+through. But the problem is, though,&nbsp;&nbsp;
+
+00:02:24.000 --> 00:02:28.240
+we're saying the same things we have always&nbsp;
+had to say as accessibility&nbsp;advocates:
+
+00:02:28.960 --> 00:02:35.920
+Use descriptive alt text in your images Please&nbsp;
+start using headings to mark up your&nbsp;document!&nbsp;
+
+00:02:35.920 --> 00:02:38.080
+It helps so much in so many ways.&nbsp;&nbsp;
+
+00:02:39.440 --> 00:02:43.680
+Don't mess around with ARIA unless&nbsp;
+you understand what's going on.
+
+00:02:43.680 --> 00:02:47.520
+Studies have shown that&nbsp;
+websites&nbsp;that utilize ARIA tend&nbsp;
+
+00:02:47.520 --> 00:02:53.600
+to have up to 60% more errors in them than&nbsp;
+sites that don't. So be careful with it.
+
+00:02:53.600 --> 00:02:55.200
+And most importantly,&nbsp;&nbsp;
+
+00:02:55.200 --> 00:02:59.760
+AI subtitles are not a replacement
+for human written captioning...&nbsp;&nbsp;
+
+00:03:00.800 --> 00:03:08.720
+Yeah. So really we have such a long way&nbsp;to go
+in terms of basic accessibility compliance&nbsp;&nbsp;
+
+00:03:09.280 --> 00:03:16.480
+and it's aggravating because last May, WCAG 1.0,
+the first specification for web&nbsp;&nbsp;
+
+00:03:16.480 --> 00:03:22.320
+accessibility guidelines, turned 21.
+It can now legally drink&nbsp;in the United States.
+
+00:03:22.320 --> 00:03:23.680
+It's been drinking in&nbsp;other countries&nbsp;&nbsp;
+
+00:03:23.680 --> 00:03:26.240
+for a while too but it can
+now&nbsp;even legally drink here.&nbsp;&nbsp;
+
+00:03:27.200 --> 00:03:31.040
+And that is exhausting because it's not only
+that we're having to repeat&nbsp;ourselves.
+
+00:03:31.040 --> 00:03:33.920
+There are these complex topics / advanced&nbsp;issues&nbsp;
+
+00:03:33.920 --> 00:03:37.520
+that we know exist that we&nbsp;
+should be&nbsp;and could be working on
+
+00:03:37.520 --> 00:03:41.200
+but we can't because we're&nbsp;having
+to do this basic big basic advocacy.
+
+00:03:41.200 --> 00:03:43.200
+So I'm going&nbsp;to take a few&nbsp;
+moments to talk about one&nbsp;
+
+00:03:43.200 --> 00:03:48.000
+of these&nbsp;topics that really really interests me
+and one&nbsp;that goes back to my doctoral days.
+
+00:03:48.000 --> 00:03:52.720
+I'm going to&nbsp;&nbsp;talk about accessibility around&nbsp;
+collaboration, particularly collaboration with&nbsp;&nbsp;
+
+00:03:52.720 --> 00:03:59.440
+documents. So let's take a look on how document&nbsp;
+accessibility typically works now in the library.
+
+00:03:59.440 --> 00:04:02.480
+So we typically&nbsp;have a book, you know,&nbsp;&nbsp;
+
+00:04:02.480 --> 00:04:06.880
+some some form of text. A document. Could&nbsp;
+be print, digital, could be an&nbsp;article.
+
+00:04:06.880 --> 00:04:12.000
+And then we have a patron. In this case,&nbsp;
+the patrons here are going to be represented&nbsp;&nbsp;
+
+00:04:12.000 --> 00:04:17.360
+by cute pictures of people's pets
+So Fiona here is&nbsp;a cute tuxedo cat.
+
+00:04:17.360 --> 00:04:19.600
+She has limited visual acuity.&nbsp;
+
+00:04:19.600 --> 00:04:24.000
+Has an executive functioning disorder meaning&nbsp;
+that she needs support with organization.&nbsp;&nbsp;
+
+00:04:24.000 --> 00:04:29.440
+And the combination of these disabilities tends to&nbsp;
+mean that she really prefers listening to her text&nbsp;&nbsp;
+
+00:04:29.440 --> 00:04:34.800
+and actually asks for them to be transformed&nbsp;
+into MP3s separated by either major chapter&nbsp;&nbsp;
+
+00:04:34.800 --> 00:04:38.720
+or section. So that it's organized&nbsp;
+a little bit easier for&nbsp;her to use.
+
+00:04:40.240 --> 00:04:43.920
+now it might turn out that there&nbsp;
+is&nbsp;actually a third person involved&nbsp;&nbsp;
+
+00:04:43.920 --> 00:04:46.960
+in this such as&nbsp;myself, so&nbsp;
+an accessibility librarian.
+
+00:04:46.960 --> 00:04:52.640
+Here, I am&nbsp;not represented by a pet&nbsp;
+image. I'm represented by the avatar&nbsp;&nbsp;
+
+00:04:52.640 --> 00:04:57.520
+I use which is a cartoon version of my&nbsp;
+best spectacled, brunette, geeky self.&nbsp;
+
+00:04:57.520 --> 00:05:01.840
+And my&nbsp;role in this is&nbsp;
+actually to pretty much assist&nbsp;&nbsp;
+
+00:05:01.840 --> 00:05:06.080
+with the patron being able to access the text.
+So I might be doing the remediation of&nbsp;&nbsp;
+
+00:05:06.080 --> 00:05:09.600
+it. i might I might be assisting&nbsp;
+them with their assistive technology,&nbsp;&nbsp;
+
+00:05:09.600 --> 00:05:13.360
+either recommending better tools&nbsp;
+or helping them&nbsp;configure it.&nbsp;
+
+00:05:13.360 --> 00:05:17.840
+But functionally---but ultimately,
+I am&nbsp;leaving them alone to how they work with it.
+
+00:05:17.840 --> 00:05:22.480
+So is this document collaboration&nbsp;
+right now? It isn't is it?&nbsp;
+
+00:05:22.480 --> 00:05:28.800
+Fiona and I are not doing a shared task&nbsp;
+over the text document collaboration is when&nbsp;&nbsp;
+
+00:05:28.800 --> 00:05:34.880
+multiple people discuss and work around a common&nbsp;
+text and this is actually a very common action.&nbsp;
+
+00:05:35.920 --> 00:05:38.880
+Book clubs&nbsp;are actually one of the&nbsp;
+most common forms of it where a group&nbsp;&nbsp;
+
+00:05:38.880 --> 00:05:43.120
+of people read and discuss the same&nbsp;
+book be it fiction or non-fiction.
+
+00:05:43.120 --> 00:05:46.160
+We have research&nbsp;&nbsp;groups where&nbsp;
+people are constantly working&nbsp;
+
+00:05:46.160 --> 00:05:51.920
+over&nbsp;published materials, their own reports,&nbsp;
+everything And in businesses we have committees&nbsp;
+
+00:05:51.920 --> 00:05:58.720
+This is&nbsp;not unique to just the university or&nbsp;
+academia. This is our information society.&nbsp;
+
+00:05:58.720 --> 00:06:04.880
+Collaborating&nbsp;over documents is pervasive and&nbsp;
+the implications of this is that what happens&nbsp;&nbsp;
+
+00:06:04.880 --> 00:06:10.160
+when you start to introduce accessibility and&nbsp;
+disability concerns into one of these groups?&nbsp;
+
+00:06:10.160 --> 00:06:13.680
+So you might think&nbsp;what happens&nbsp;
+when one person has a disability?&nbsp;
+
+00:06:14.480 --> 00:06:17.120
+And I'm going to tell you&nbsp;
+you're thinking&nbsp;wrong there.&nbsp;
+
+00:06:17.120 --> 00:06:19.600
+The actual question you should ask is what happens&nbsp;&nbsp;
+
+00:06:19.600 --> 00:06:22.880
+when one or more persons in&nbsp;
+the group has a disability?&nbsp;
+
+00:06:23.920 --> 00:06:28.640
+What happens when they have different access&nbsp;
+or technology needs? And in particular,
+
+00:06:28.640 --> 00:06:32.320
+What if&nbsp;those different needs&nbsp;
+interact or interfere with&nbsp;each other?&nbsp;
+
+00:06:32.320 --> 00:06:35.280
+What do you do then? What is needed?&nbsp;&nbsp;
+
+00:06:36.640 --> 00:06:41.920
+And the reality is is that when we're talking&nbsp;
+about inclusive accessible document collaboration&nbsp;&nbsp;
+
+00:06:41.920 --> 00:06:48.240
+We might have a bunch of users. Might have&nbsp;
+all these different pets: cats, dogs, a rat.
+
+00:06:48.960 --> 00:06:53.200
+You know,&nbsp;all these inter---all these&nbsp;
+people working around a common text and&nbsp;&nbsp;
+
+00:06:53.200 --> 00:06:55.440
+there could be all sorts of&nbsp;interactions involved.
+
+00:06:55.440 --> 00:06:59.040
+So let's just look at some&nbsp;potential&nbsp;
+ones that could exist.&nbsp;
+
+00:06:59.040 --> 00:07:05.200
+So let's go back to Fiona. As i said, Fiona---she&nbsp;
+has some limited vision and listens to audiobooks&nbsp;&nbsp;
+
+00:07:05.200 --> 00:07:08.960
+to help with her organizational issues&nbsp;
+Now, Fiona's going to&nbsp;be working&nbsp;
+
+00:07:08.960 --> 00:07:16.320
+with Luna, a very cute brown hound dog&nbsp;
+with definitely puppy dog begging eyes.&nbsp;
+
+00:07:16.320 --> 00:07:22.080
+She&nbsp;also has low vision, but she uses a screen&nbsp;
+reader and thus requires a fully remediated&nbsp;&nbsp;
+
+00:07:22.080 --> 00:07:29.040
+electronic version of the text such as a PDF or&nbsp;
+EPUB3. Now, in terms of interaction, where they're&nbsp;&nbsp;
+
+00:07:29.040 --> 00:07:34.240
+going to start running into problems is that Luna,&nbsp;
+because she is actually working with the text,&nbsp;&nbsp;
+
+00:07:34.240 --> 00:07:41.440
+can actually refer to specific pages, sentences,&nbsp;
+paragraphs, columns, all sorts of things like&nbsp;&nbsp;
+
+00:07:41.440 --> 00:07:47.520
+that. Fiona is listening to just the audio&nbsp;
+version and doesn't have access to the source text&nbsp;&nbsp;
+
+00:07:47.520 --> 00:07:51.920
+so therefore she's actually not going to be&nbsp;
+able to necessarily go to the same places that&nbsp;&nbsp;
+
+00:07:51.920 --> 00:07:55.840
+Luna is referring to. Their collaboration.&nbsp;
+is going to be muddled because of that.&nbsp;
+
+00:07:56.720 --> 00:08:02.320
+Now, in terms of a solution for this, there are&nbsp;
+basically this something doesn't exist yet but&nbsp;&nbsp;
+
+00:08:02.320 --> 00:08:08.720
+basically we need better talking book technology&nbsp;
+that both has access to the underlying text source&nbsp;&nbsp;
+
+00:08:09.760 --> 00:08:16.240
+but also supports executive functioning more.&nbsp;
+The current technology, screen readers you&nbsp;know,&nbsp;&nbsp;
+
+00:08:16.240 --> 00:08:21.280
+tools that read PDF aloud, typically are&nbsp;
+just focused on that text access but not&nbsp;&nbsp;
+
+00:08:21.280 --> 00:08:26.480
+necessarily the organizational skills around&nbsp;
+that. Let's go to another interaction. Here now,&nbsp;&nbsp;
+
+00:08:26.480 --> 00:08:31.840
+we're going to introduce Tess. Tess is a a&nbsp;
+gray fluffy cat with uh light green eyes.&nbsp;&nbsp;
+
+00:08:31.840 --> 00:08:36.400
+She has dyslexia, meaning that her reading&nbsp;
+is a little bit more labored and slow,&nbsp;&nbsp;
+
+00:08:36.400 --> 00:08:41.440
+but she also has a very strong glare sensitivity.&nbsp;
+So she definitely does not prefer reading off&nbsp;&nbsp;
+
+00:08:41.440 --> 00:08:47.440
+of electronic screens and tends to print out&nbsp;
+everything. And often to support her dyslexia,&nbsp;&nbsp;
+
+00:08:47.440 --> 00:08:52.800
+she's found that certain fonts and other types&nbsp;
+of graphical settings help. Now, we also have&nbsp;&nbsp;
+
+00:08:52.800 --> 00:08:58.560
+Fluffernutter who is another cat, but she's a very&nbsp;
+light creamsicle cat with gorgeous blue eyes. She&nbsp;&nbsp;
+
+00:08:58.560 --> 00:09:06.160
+has weak vision and difficulty also sitting up for&nbsp;
+a long period of time so she uses magnification&nbsp;&nbsp;
+
+00:09:06.160 --> 00:09:12.000
+and works off of a tablet, so, you know,
+an iPad, Windows Surface, something like that.&nbsp;&nbsp;
+
+00:09:12.000 --> 00:09:17.280
+And so she's constantly zooming in on the text.&nbsp;
+Now, there can be several interaction issues here.&nbsp;&nbsp;
+
+00:09:17.920 --> 00:09:22.880
+One is is that Tess's printed out text is going&nbsp;
+to be laid out different than Fluffernutters's.&nbsp;&nbsp;
+
+00:09:24.320 --> 00:09:28.080
+And so they're going to be constantly like&nbsp;
+they can be on different pages and everything.&nbsp;&nbsp;
+
+00:09:28.640 --> 00:09:32.080
+Line breaks are going to be different, and&nbsp;
+even like, you know, reference points where&nbsp;&nbsp;
+
+00:09:32.080 --> 00:09:36.000
+you might say it's like near the top&nbsp;
+of this page or next to that picture of&nbsp;&nbsp;
+
+00:09:36.000 --> 00:09:41.440
+a frog because apparently there's a picture&nbsp;
+of a frog in this. They will be, you know,&nbsp;&nbsp;
+
+00:09:41.440 --> 00:09:45.440
+they're not going to have that shared context&nbsp;
+to be working with. Fluffernutter is also going&nbsp;
+
+00:09:45.440 --> 00:09:50.640
+to&nbsp;be working with a much smaller contextual&nbsp;
+frame. because Fluffernutter---I'm sorry,&nbsp;&nbsp;
+
+00:09:50.640 --> 00:09:54.560
+Fluffernutter is a boy, I keep&nbsp;
+forgetting that---Fluffernutter is&nbsp;
+
+00:09:56.080 --> 00:10:00.560
+just focused in on that.
+So, you know, what solution can we&nbsp;&nbsp;
+
+00:10:00.560 --> 00:10:05.760
+need her? One for Tess, we definitely&nbsp;
+need improved e-text displays that&nbsp;&nbsp;
+
+00:10:06.560 --> 00:10:10.320
+cut down on glare sensitivity but&nbsp;
+also allow for more customization.&nbsp;&nbsp;
+
+00:10:11.360 --> 00:10:15.120
+Kindle Paperwhite is pretty good&nbsp;
+but in terms of its accessibility&nbsp;&nbsp;
+
+00:10:15.680 --> 00:10:22.000
+features it's pretty limited just as Amazon's
+always been kind of weak on that side. Better
+
+00:10:22.000 --> 00:10:27.760
+type setting algorithms that can help keep figures&nbsp;
+and text sections together will also address&nbsp;&nbsp;
+
+00:10:27.760 --> 00:10:33.200
+some of these issues. But then there's also&nbsp;
+features such as an EPUB3 that are good about&nbsp;&nbsp;
+
+00:10:33.200 --> 00:10:37.760
+marking and exposing original page breaks.&nbsp;
+These can be exposed in there and they're&nbsp;&nbsp;
+
+00:10:37.760 --> 00:10:43.360
+really valuable for helping people who are working&nbsp;
+across different, you know, formats. Print versus&nbsp;&nbsp;
+
+00:10:43.360 --> 00:10:48.080
+digital, you know. Be able to refer to pages and&nbsp;
+everything but they need to be exposed better.&nbsp;
+
+00:10:48.080 --> 00:10:52.720
+There's a lot of user experience work that&nbsp;
+needs to happen there and with all this research&nbsp;&nbsp;
+
+00:10:52.720 --> 00:10:58.320
+research research. This type of interaction&nbsp;
+is not discussed that much or if at all.&nbsp;&nbsp;
+
+00:10:59.120 --> 00:11:07.840
+Let's get into one other one here. So here we have&nbsp;
+Ivy and Wilbur. Ivy is a diluted calico cat with&nbsp;&nbsp;
+
+00:11:07.840 --> 00:11:15.360
+olive tan eyes. Ivy is hard of hearing and needs&nbsp;
+captioning. Due to just the knowledge that you&nbsp;&nbsp;
+
+00:11:15.360 --> 00:11:21.440
+know getting a human captioner is tricky, they can&nbsp;
+tolerate AI subtitles if necessary. But there's a&nbsp;&nbsp;
+
+00:11:21.440 --> 00:11:27.760
+limit to that. But now we have Wilbur. Wilbur&nbsp;
+is a chubby white chihuahua with gorgeous dark&nbsp;&nbsp;
+
+00:11:27.760 --> 00:11:34.320
+eyes and you just want to hug him. And Wilbur&nbsp;
+both has anxiety and a very pronounced stutter.&nbsp;&nbsp;
+
+00:11:34.320 --> 00:11:38.320
+And the two of them feed into each other.
+So&nbsp;what's going to happen in this interaction?&nbsp;&nbsp;
+
+00:11:39.520 --> 00:11:43.840
+This really isn't necessarily about print access&nbsp;
+but more about the actual act of collaboration.&nbsp;&nbsp;
+
+00:11:44.400 --> 00:11:52.720
+Ivy is going to be frustrated as the AI subtitles&nbsp;
+are going to struggle with Wilbur's stutter and&nbsp;&nbsp;
+
+00:11:52.720 --> 00:11:58.320
+Wilbur might actually end up getting---his stutter&nbsp;
+might actually get exacerbated because he's seeing&nbsp;&nbsp;
+
+00:11:58.320 --> 00:12:04.000
+he's experiencing both Ivy's frustration,&nbsp;
+and if he turns on the captions, he'll&nbsp;&nbsp;
+
+00:12:04.880 --> 00:12:09.840
+see that his stutter is even worse. So you're&nbsp;
+gonna get this horrible feedback loop in here.&nbsp;&nbsp;
+
+00:12:10.720 --> 00:12:17.760
+But let's make this even more fun. Let's&nbsp;
+throw in Dash. Dash is a very cute gray rat.&nbsp;&nbsp;
+
+00:12:18.640 --> 00:12:24.960
+Dash has a heavy Spanish accent and he also has&nbsp;
+a bit of PTDS from a racist attack in this all&nbsp;&nbsp;
+
+00:12:24.960 --> 00:12:30.800
+so great country of the last four years. But&nbsp;
+Dash here now has even further issues going on.&nbsp;&nbsp;
+
+00:12:30.800 --> 00:12:35.760
+For Dash, Dash is going to be, he's going&nbsp;
+to hope that nobody says anything about&nbsp;&nbsp;
+
+00:12:35.760 --> 00:12:39.440
+speaking proper English. He knows that&nbsp;
+the captions were probably going to be&nbsp;&nbsp;
+
+00:12:40.000 --> 00:12:44.800
+you know having difficulty with his accent&nbsp;
+which will aggravate Ivy more and so we have&nbsp;&nbsp;
+
+00:12:44.800 --> 00:12:51.200
+all this going on. And this is just interaction&nbsp;
+of, you know, pretty much just one technology&nbsp;&nbsp;
+
+00:12:51.200 --> 00:12:55.920
+there and to be able to work together they're&nbsp;
+going to be facing a lot of challenges. Now,&nbsp;&nbsp;
+
+00:12:55.920 --> 00:13:02.000
+there are multiple solutions here. The first is&nbsp;
+to recognize that text-based chat which is another&nbsp;&nbsp;
+
+00:13:02.000 --> 00:13:08.320
+means of them communicating would work but that's&nbsp;
+largely just a bandage. You know there's only so&nbsp;&nbsp;
+
+00:13:08.320 --> 00:13:14.800
+much, you know, text-based communication is just&nbsp;
+not as fast and flowing as conversation can be.&nbsp;&nbsp;
+
+00:13:16.240 --> 00:13:21.040
+But involved in this, though, is like there should&nbsp;
+be better promotion, support, infrastructure, and&nbsp;&nbsp;
+
+00:13:21.040 --> 00:13:26.160
+funding for human-provided captioning. If that's&nbsp;
+actually funded / provided, then you wouldn't&nbsp;&nbsp;
+
+00:13:26.160 --> 00:13:34.160
+be running into this. Captioners can often adjust&nbsp;
+way better and more more fluidly to challenges in&nbsp;&nbsp;
+
+00:13:35.440 --> 00:13:41.280
+in presentation. And there's also too, I will say,&nbsp;
+is that maybe we can improve AI voice recognition&nbsp;&nbsp;
+
+00:13:41.280 --> 00:13:45.440
+and some things that might be involved with that&nbsp;
+is actually building up profiles for individual&nbsp;&nbsp;
+
+00:13:45.440 --> 00:13:50.880
+speakers and being able to to counter&nbsp;
+those effects where it's like going. Oh,&nbsp;&nbsp;
+
+00:13:50.880 --> 00:13:56.880
+Dash has a heavy Spanish accent. That is something&nbsp;
+we can prepare for and load a different model. Or&nbsp;&nbsp;
+
+00:13:56.880 --> 00:14:02.320
+Wilbur's, you know, stuttering. You could like&nbsp;
+work with that but we need to actually do that,&nbsp;&nbsp;
+
+00:14:02.320 --> 00:14:07.520
+and the researchers and designers need to&nbsp;
+think about this. Now, I'm going to admit that&nbsp;&nbsp;
+
+00:14:07.520 --> 00:14:14.560
+last one was not necessarily about you know,&nbsp;
+accessibility and&nbsp;document collaboration but&nbsp;&nbsp;
+
+00:14:14.560 --> 00:14:19.520
+it still has a point is that there's a lot&nbsp;
+of work in accessibility and user experience&nbsp;&nbsp;
+
+00:14:20.640 --> 00:14:26.880
+that over focus on the needs of single users but&nbsp;
+doesn't really think about fundamental group tasks&nbsp;&nbsp;
+
+00:14:26.880 --> 00:14:32.320
+and one of those fundamental group tasks I think&nbsp;
+about a lot is the collaboration over shared&nbsp;&nbsp;
+
+00:14:32.320 --> 00:14:37.680
+text. Just even chatting is any fundamental&nbsp;
+tasks that we're not necessarily thinking&nbsp;&nbsp;
+
+00:14:38.320 --> 00:14:42.400
+fully about particularly in terms of&nbsp;
+access to people with disabilities.&nbsp;&nbsp;
+
+00:14:43.520 --> 00:14:47.120
+And, yeah you know, I said this is just what I
+said and you know the big thing is too I want&nbsp;&nbsp;
+
+00:14:47.120 --> 00:14:51.520
+to point out i was only talking about reading&nbsp;
+documents none of this had to involve the access&nbsp;&nbsp;
+
+00:14:51.520 --> 00:14:56.560
+issues involved with writing and editing a&nbsp;
+document. The very fact is we're ignoring&nbsp;&nbsp;
+
+00:14:56.560 --> 00:15:00.320
+so many multiple technical technology&nbsp;
+interactions and meeting user needs.&nbsp;&nbsp;
+
+00:15:01.520 --> 00:15:03.760
+Especially in the case of disabilities and access.&nbsp;&nbsp;
+
+00:15:04.720 --> 00:15:09.280
+The interaction scenarios I presented are barely&nbsp;
+hypothetical they occurred today and will occur&nbsp;&nbsp;
+
+00:15:09.280 --> 00:15:15.200
+more and more and accessibility advocates and&nbsp;
+researchers can begin addressing these needs&nbsp;&nbsp;
+
+00:15:15.200 --> 00:15:21.040
+now but they need the time and opportunity&nbsp;
+to do so and how you can help is learn the&nbsp;&nbsp;
+
+00:15:21.040 --> 00:15:26.960
+basics of accessibility, adopt them into regular&nbsp;
+practice, and ask questions of new technologies.&nbsp;
+
+00:15:26.960 --> 00:15:31.920
+Ask&nbsp;if AI subtitles / captions&nbsp;
+will actually be&nbsp;&nbsp;sufficient.
+
+00:15:32.720 --> 00:15:37.520
+And more importantly do not discount&nbsp;
+the lived experiences of disabled people&nbsp;&nbsp;
+
+00:15:38.080 --> 00:15:44.640
+Aim for more than minimal accessibility standards.&nbsp;
+Go way beyond what what WCAG demands and learn.&nbsp;&nbsp;
+
+00:15:44.640 --> 00:15:50.240
+Continue to learn. Thank you. Now before I open up&nbsp;
+for questions, I just want to address something a&nbsp;&nbsp;
+
+00:15:50.240 --> 00:15:56.240
+few things real quick. One you might actually&nbsp;
+have some problems by using photos to portray&nbsp;&nbsp;
+
+00:15:56.240 --> 00:16:01.600
+disabled people particularly given that you might&nbsp;
+say oh that's saying that disabled people are&nbsp;&nbsp;
+
+00:16:01.600 --> 00:16:05.840
+sub-human. I'm going to admit that a lot of&nbsp;
+social and medical stigma tends to actually&nbsp;&nbsp;
+
+00:16:05.840 --> 00:16:11.280
+treat disabled people otherwise. That's been my&nbsp;
+experience. Instead, I want to point out the pet&nbsp;&nbsp;
+
+00:16:11.280 --> 00:16:17.200
+images prove the point that disabled people are&nbsp;
+important parts of many people people's lives,&nbsp;&nbsp;
+
+00:16:18.000 --> 00:16:23.840
+greatly loved by their family and friends, and&nbsp;
+are exceptionally cute. Yes that's the case.&nbsp;
+
+00:16:24.800 --> 00:16:29.600
+And so I wanted to thank the people who donated&nbsp;
+their pictures. I had a lot more that I couldn't&nbsp;&nbsp;
+
+00:16:29.600 --> 00:16:34.960
+fit in and I just want to add one final thing a&nbsp;
+little... bit of sad news. You might have noticed&nbsp;&nbsp;
+
+00:16:34.960 --> 00:16:40.240
+that my frequently featured cat Francie wasn't&nbsp;
+among the pets featured in this talk. Sadly,&nbsp;&nbsp;
+
+00:16:40.240 --> 00:16:46.800
+last year, the cat that starred in my first ever&nbsp;
+accessibility talk at Code4Lib as the keyboard&nbsp;&nbsp;
+
+00:16:46.800 --> 00:16:54.880
+accessibility "no mice" cat. She sadly passed away&nbsp;
+shortly after Code4Lib. She was a great cat. Very&nbsp;&nbsp;
+
+00:16:54.880 --> 00:17:02.880
+loved and very missed, but i have another cat in&nbsp;
+my life. Fiona is my new tuxedo partner in life.&nbsp;&nbsp;
+
+00:17:02.880 --> 00:17:08.000
+and she is definitely a different character&nbsp;
+but I love her and she's a snuggle bug&nbsp;&nbsp;
+
+00:17:08.560 --> 00:17:14.080
+So let's open up for questions and as usual, feel&nbsp;
+free to talk with me about accessibility issues&nbsp;&nbsp;
+
+00:17:14.080 --> 00:17:19.173
+and libraries whenever, you know, you can reach&nbsp;
+me so let's open up. I have about 2.5 minutes.
+
